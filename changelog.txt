@@ -1,4 +1,11 @@
 dj tool.tower changelog
 
+
 current version: v1.5
+12/3/10 - v 1.5.1
+- Corrected documentation misspellings
+- Corrected a few bug-fixes
+- Added needed to function text-files
+
+v 1.5
 - fork from dj.tool tower v1.5 as sold in Second Life

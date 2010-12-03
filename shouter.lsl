@@ -9,7 +9,7 @@
 // This script is for use within SecondLife, OpenSim and related worlds.
 // It can be used as a part of commercial, and non-commercial products.
 // It CANNOT be sold on it's own.
-// Must retain this copyright notice in all realted dj tool.tower v.1.5 scripts.
+// Must retain this copyright notice in all related dj tool.tower v.1.5 scripts.
 // 
 // Permission is granted to copy, distribute and/or modify this document
 // under the terms of the GNU Free Documentation License, Version 1.3

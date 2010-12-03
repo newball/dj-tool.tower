@@ -1,0 +1,212 @@
+1. Introduction
+2. dj tool. Contents
+3. Features 
+    a.  Announcement System (Shout)
+    b. Request Management
+    c. Floating text
+    d. Tip Jar
+    e. Multiuser/Login
+4. Menu
+    a. Main menu
+    b. Requests Menu
+    c. Shout Menu
+5. FAQs
+6. Additional Information
+ 
+1. Introduction
+The dj tool. product line was created as a tool for DJ’s, clubs, and event hosts to ease typical tasks for performances and shows within Second Life.   The dj tool. operates on a menu and notecard based system, created with simplicity and easy in mind.  The dj tool. has many uses including:
+
+    1.    A request management system – listeners in the same sim can submit requests for the dj to view, delete, or to keep track of.
+    2.    A announcement system – the dj can use a notecard inside of the tool to shout announcements periodically
+    3.    A tip jar – a tip jar to keep track of how much a DJ has made during his gig.
+    4.    Hovering title – a title to hover over the tool, which allows you to customize your own message to display.
+
+The dj tool. series are sold with the following permissions: mod (allowing you to change the graphics on the panels, or the internal notecards but not the scripts), copy, no transfer.  This is done to allow the purchaser to retain a backup of the dj tool. in its original state. 
+
+2. dj tool. Contents
+
+The dj tool. has 14 items inside of it, 9 of these items are scripts required for the functionality of the dj tool;  3 of these items are notecards required to use the dj tool.  
+
+Inside your dj tool. You should have the following 3 notecards:
+    •    !Floating Text
+    •    !Instructions
+    •    !Shout
+
+Inside your dj tool. You should have the following 9 scripts:
+    •    Comm
+    •    Comm DJ
+    •    Comm Web
+    •    Floating Text
+    •    Main
+    •    Menu
+    •    Requester
+    •    Shouter
+    •    Tip Jar
+
+
+If you are using a multi-user version you may see two additional items
+    •    !Users 
+    •    Users
+
+!Users is a editable notecard meant for the owner to add or remove users for the DJ tool.  Users is a script to manage multiple users. (See section 3e).
+
+If any of these items are missing from your dj tool., it may not function properly. 
+
+3. Features
+
+There are several features in the dj tool. each feature is managed by specific notecards and menu systems (as detailed in the next section).  This feature section is to describe the notecards and each specific feature and how they work together.
+
+a.  Announcement System (Shout)
+
+The dj tool. has the ability to shout announcements within several timed intervals.  This system (referred to as Shout) displays the text in the “!Shout” Notecard .  Through the Shout menu, you can choose how often you want your announcements to be displayed (10, 20, 30, 40, 50 or 60 minutes), or turn the system off.  Anything in the notecard that contains two pound symbols (##) in the same line is not displayed.
+
+Example:
+## This line is not shouted
+This line ## is not shouted either
+Neither is this line ##
+
+The displayed message can be as long or short as you want.
+
+TIP: Most people dislike long announcements that are shouted often.  Short and informative messages are preferred.
+
+Below is an example of how the !Shout notecard should look like:
+
+## Place your announcement to be shouted below.  It Can be Multple Lines, ex:
+## Welcome to The High
+## Hope you enjoy your time here
+## If you can, show your DJ some love :D
+##-----------------------------------------
+Welcome to The Club
+Enjoy your time here
+Remember to make a request type in /555 with your request
+(ie. /555 Michael Jackson - Bad or /555 Any Michael Jackson!)
+
+TIP:   A great way to use this system is to place any announcements, contest information that you would normally say or have other people shout. 
+
+b. Request Management
+
+Requests are managed through the 555 channel.  In order for a request to appear through the dj tool., they must be submitted with /555 before the request text.  Below are the correct ways to submit requests:
+
+/555 Darude Sandstorm
+/555 Darude
+/555 Some punk music!
+/555 Awesome music, have anymore jazz?
+
+Below are incorrect ways to submit requests:
+
+/5 Darude - Sandstorm
+/55 Darude - Sandstorm
+555 Darude Sandstorm
+/request Darude Sandstorm
+
+The request function of the dj tool., is always on, and requests can ONLY be seen by the owner of the dj tool. (in most cases the DJ).  When a request is processed, the name of the requester is attached (see below in section 7b, when discussing the Requests menu).
+
+Requests can also be deleted from the queue as well.  Only the owner of the dj tool. can remove requests from the queue.  To remove a request, at any time, type in /555 delete and the request number.  Below are examples of how to properly remove requests: 
+
+/555 delete 2
+/555 delete 22
+/555 delete 3
+
+Below are examples of incorrect ways to delete requests
+
+/55 delete 2
+/555 delete 2 2
+/555 delete Darude - Sandstorm
+
+c. Floating text
+
+Hovering text is controlled by the !floating text note card.  Text, placed in this notecard will display over the dj tool., in red lettering.  Any line that contains two pound sybmbols (##) in the same line will not be displayed, for example:
+
+## This line is not be displayed
+This line ## is not displayed either
+Neither is this line ##
+
+The !Floating Text notecard should look like the following:
+
+## Place your floating text below.  Example:
+## Nexeus Tip Jar
+## -------------------------------------------
+The DJ's Tip Jar!
+
+You can display multiple lines of floating text by adding more lines in the notecard.  Here is an example: 
+
+## Place your floating text below.  Example:
+## Nexeus Tip Jar
+## -------------------------------------------
+Welcome to The Club
+This is the DJ's Tip Jar!
+
+d. Tip Jar
+
+The dj tool. can also act as a tip-jar, sending any money to the owner or the current logged in user. 
+
+Currently tips are not split (a feature planned to be implemented later).
+
+e. Multiuser/Login
+(available in any of the multiuser tools)
+
+Multiuser has been added to the dj tool. tower since version 1.2 but only exists in specified products (generally any item that begins with DJ2).  Multiuser support requires a !User notecard and user script and supports up to 10 users (not including the item owner).  A users has the ability to run every aspect of the DJ tool except update the tool, only the owner is able to perform this funcation.
+
+In order to add users, add them through the !User note card separating each name by a comma.  Example:
+
+Nexeus Fatale, Phillip Linden
+
+Note:  You can add as many names to the !User notecard, but only the first two names will be recognized.  Any names after the first ten will be disregarded. 
+
+Multiuser support is based on a login system.  In order for the DJ tool to be operatable for a user, they must login.  This is done by simply clicking on the dj tool. and then selecting "Login" from the user menu.  Clicking on "Don't Login" prevents the user from login in.  A user is logged in until another user or owner logs in.
+
+4. Menu
+
+The dj tool. relies on a menu system for its functions.  There are two menus, the main menu, and the requests menu.  After making a selection through the menu, it will reappear for further use.
+
+a. Main menu
+
+Instruction - This button pulls up the instruction card.
+Requests – this button display the requests menu.
+Shout – this button displays the shout menu.
+Title - Toggles on and off the text hovering above your dj tool.
+Tips - Displays the amount of tips you have received since being rezzed.
+Update - This option checks to see if there is additional updates since its release
+Reset - Resets your tool to its default state.
+
+b. Requests Menu
+
+Show - Displays your current requests in the formation of (Request Number) (Requester) requested (request).  The list is only seen by the owner/DJ of the dj tool.  When you press this button, your current request queue will look like the following below:
+
+No. 1 Nexeus Fatale requested Aqua Barbie Girl
+No. 2 Nexeus Fatale requested D.M.X. Who We Be?
+No. 3 Samantha Hasp requested GREAT MUSIC!  Have any James Brown?
+
+To read this properly, when something like No. 1 Nexeus Fatale requested Aqua Barbie Girlis displayed, it should be read as:
+
+No. 1 (Request Number) Nexeus Fatale (Requester) requested Aqua Barbie Girl (request)
+
+Delete - Displays instructions on how to delete a request from the que
+Reminder - Toggles on/off a reminder updating the owner/dj how many requests are still in queue, every 5 minutes.
+Reset - This resets your requests by clearing them.
+Main - Returns you to the main menu (see section 7a)
+
+c. Shout Menu
+
+The shout menu displays time intervals from 10 minutes to 60 minutes.  These intervals will determine the period between shouting announcements.  
+Shout Off – this turns off the shout function
+Main - Returns you to the main menu (see section 7a)
+
+5. FAQs
+
+Q: Can this be used with multiple users, DJs, or operators?
+A: Yes, there has been a multiversion released.  Currently it supports up to 11 people (the owner and ten other people).   Look for any dj tool. product that mentions multiuser support.
+
+Q: Can I modify the look of my dj tool.?
+A: Yes you can modify the look of your dj tool. by placing different textures on it.  Support is not available if the dj tool. is unlinked and does not work.
+
+Q: Can I use these scripts in other objects?
+A: Possibly, but not highly recommended.  Support is not available if these scripts are taken out of their original object.
+
+Q: How often is the dj tool. updated
+A: The dj tool. is updated periodically, there is no scheduled time table for its updates.  Notification of updates will be made through the classifieds, and forums.
+
+6. Additional Information
+
+The dj tool. is created by Nexeus Fatale.  
+For information concerning the dj tool., customizations, suggestions or feedback, contact Nexeus Fatale or visit the nf_d website at nfd.nexeusfatale.com
